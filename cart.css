@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.cart-items {
+    margin: 20px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.total h2 {
+    font-size: 1.5rem;
+}
+
+.total span {
+    color: #f00;
+}

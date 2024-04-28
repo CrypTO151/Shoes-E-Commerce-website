@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition:  0.5s;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  /* display: flex; */
+  background-color: rgb(203, 1, 27);
+  width: 100%;
+  height: 100vh;
+  /* border: solid black; */
+}
+
+.container img {
+  position: relative;
+  width: 73%;
+  padding-left: 13rem;
+  padding-top: 5rem;
+  float: right;
+}
+
+.navbar {
+  
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
+  
+  
+}
+.navbar::before {
+  content: "";
+    background-color: black;
+    position: absolute;
+    height: 11%;
+    width: 100%;
+    z-index: -1;
+    /* opacity:  */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 12rem;
+  margin-left: 19rem;
+  padding-top: 3.8rem;
+  
+  
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 0px; */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  /* padding-left: 2rem;     */
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  /* cursor: default; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: inset 0 0 0 0 rgb(203, 1, 27);
+  font-weight: 400;
+  /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
+  
+}
+
+
+a:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: rgb(203, 1, 27);
+}
+
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.sign-in {
+  margin-left: auto;
+}
+section nav .icons i{
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+  color: white;
+}
+
+
+.btn {
+  position: absolute;
+  top: 0;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  border: none;
+  padding-left: 10rem;
+  font-family: Arial;
+  color: rgb(203, 1, 27);
+  font-size: 16px;
+  font-weight: 500;
+  background: #fffffF;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  right: 0;
+  margin-right: 11rem;
+  margin-top: 3.6rem;
+  width: 7.5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+.btn:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #9f0c1f;
+  transform: scale(1.2,1.2);
+  transition: 0.5s;
+}
+
+#more{
+  position: absolute;
+  left: 0;
+  margin-top: 36rem;
+  margin-left: 8.5rem;
+  font-weight: 700;
+  width: 10%;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.textheading {
+  position: absolute;
+  top: 0;
+  color: white;
+  width: 50%;
+  font-size: 1.8rem;
+  margin-top: 15rem;
+  margin-left: 8.5rem;
+}
+
+.textpara {
+  position: absolute;
+  top: 0;
+  color: white;
+  width: 40%;
+  margin-top: 26rem;
+  margin-left: 8.5rem;
+  font-size: 18px;
+}
+
+@import url(//db.onlinewebfonts.com/c/fccd795cac3cf69044db49c97f59c3cb?family=Hanley+Pro+Monoline);
+
+.logo h3 {
+  position: absolute;
+  top: 0;
+  margin-top: 1.1rem;
+  margin-left: 10rem;
+  font-family: "Hanley Pro Monoline";
+  font-size: 4rem;
+  color: white;
+}
+
+.body{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 8%;
+ 
+}
+
+
+.title {
+  color: rgb(203, 1, 27);
+  text-align: center;
+  font-size: 45px;
+  margin: 3rem auto;
+}
+
+.product-grid-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.product-container{
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  border: 0.4px solid grey;
+}
+.product-img-wrapper {
+  height: 333px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+
+.product-img {
+  
+  width: 100%;
+  
+}
+.product-img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.product-info-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 1rem;
+  
+}
+
+.product-seller {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+  margin-left: 5px;
+}
+
+.product-title {
+  font-size: 20px;
+  margin: 3px;
+  font-weight: 700;
+}
+
+.product-price {
+  color: #121212;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.btn-cart {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 18px;
+  font-family: Arial;
+  color: white;
+  font-size: 15px;
+  background: rgb(203, 1, 27);
+  padding: 5px 8px 5px 8px;
+  text-decoration: none;
+  margin: 5px 2px 1px;
+}
+
+.btn-cart:hover {
+  background: #9f0c1f;
+  text-decoration: none;
+}
+
+.dropshadow {
+  position: absolute;
+  height: 0.01vh;
+  width: 100%;
+  /* border: 2px solid black; */
+  margin-top: 6.4rem;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4); /* x-offset y-offset blur color */
+}
+
+
+.about{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(203, 1, 27);
+}
+.about h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 45px;
+  margin: 3rem auto;
+}
+
+.about1 img{
+  border: none;
+  width: 25%;
+  float: left;
+  margin-left: 30px;
+  border-radius: 80%;
+  margin-right: 18px;
+}
+
+.about1 p{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 50px;
+  margin-left: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 2;
+}
+
+.about2{
+  margin-top: 70px;
+}
+
+.about2 img{
+  border: none;
+  width: 25%;
+  float: right;
+  margin-right: 30px;
+  border-radius: 80%;
+  margin-left: 18px;
+}
+
+.about2 p{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 50px;
+  margin-left: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 2;
+}
+
+/*Footer*/
+
+
+footer{
+  width: 100%;
+}
+
+footer .footer_main{
+  width: 100%;
+  background: #f3f1f1;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer_main .tag{
+  margin: 10px 0;
+}
+
+footer .footer_main .tag .center{
+  text-align: center;
+}
+
+footer .footer_main .tag h1{
+  font-size: 25px;
+  margin: 25px 0;
+  color: rgb(203, 1, 27);
+}
+
+footer .footer_main .tag a{
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 9px 0;
+}
+
+footer .footer_main .tag a i{
+  padding: 0 10px;
+  transition: 0.3;
+}
+
+
+
+footer .footer_main .tag .social_link{
+  display: flex;
+}
+
+footer .footer_main .tag .social_link a{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+  position: relative;
+  margin: 0 5px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+footer .footer_main .tag .social_link a .fa-brands{
+  font-size: 15px;
+  line-height: 30px;
+  z-index: 10;
+  position: relative;
+  transition: 0.5s;
+}
+
+footer .footer_main .tag .search_bar{
+  width: 230px;
+  height: 30px;
+  background: rgb(202, 202, 202);
+  border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+  width: 200px;
+  padding: 2px 0;
+  position: relative;
+  top: 17%;
+  left: 6%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 13px;
+}
+
+footer .footer_main .tag .search_bar button{
+  padding: 7px 15px;
+  background: linear-gradient(to right, rgb(203, 1, 27) , rgb(203, 1, 27));
+  border: none;
+  margin-top: 15px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+#AddToCartBtn {
+  /* border: solid black; */
+  position: absolute;
+  right: -130px;
+  top: -10;
+  font-size: 16px;
+  text-align: center;
+}
